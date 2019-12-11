@@ -166,25 +166,65 @@ void ModulePlayer::RestartLevel()
 	App->scene_intro->CubMtB17->SetPos(-54.5, 6, 51.5);
 
 	//CUBE MT 2
-	App->scene_intro->CubMtB20->SetPos(-50, 0, 90);
-	App->scene_intro->CubMtB21->SetPos(-53, 0, 90);
-	App->scene_intro->CubMtB22->SetPos(-56, 0, 90);
-	App->scene_intro->CubMtB23->SetPos(-59, 0, 90);
-	App->scene_intro->CubMtB24->SetPos(-50, 0, 93);
-	App->scene_intro->CubMtB25->SetPos(-53, 0, 93);
-	App->scene_intro->CubMtB26->SetPos(-56, 0, 93);
-	App->scene_intro->CubMtB27->SetPos(-59, 0, 93);
-	App->scene_intro->CubMtB28->SetPos(-51.5, 2, 93);
-	App->scene_intro->CubMtB29->SetPos(-54.5, 2, 93);
-	App->scene_intro->CubMtB30->SetPos(-57.5, 2, 93);
-	App->scene_intro->CubMtB31->SetPos(-51.5, 2, 90);
-	App->scene_intro->CubMtB32->SetPos(-54.5, 2, 90);
-	App->scene_intro->CubMtB33->SetPos(-57.5, 2, 90);
-	App->scene_intro->CubMtB34->SetPos(-53, 4, 91.5);
-	App->scene_intro->CubMtB35->SetPos(-56, 4, 91.5);
-	App->scene_intro->CubMtB36->SetPos(-54.5, 6, 91.5);
-	
-	
+	if (App->player->CheckpointActive == false) {
+		App->scene_intro->CubMtB20->SetPos(-50, 0, 103);
+		App->scene_intro->CubMtB21->SetPos(-53, 0, 103);
+		App->scene_intro->CubMtB22->SetPos(-56, 0, 103);
+		App->scene_intro->CubMtB23->SetPos(-59, 0, 103);
+		App->scene_intro->CubMtB24->SetPos(-50, 0, 106);
+		App->scene_intro->CubMtB25->SetPos(-53, 0, 106);
+		App->scene_intro->CubMtB26->SetPos(-56, 0, 106);
+		App->scene_intro->CubMtB27->SetPos(-59, 0, 106);
+		App->scene_intro->CubMtB28->SetPos(-51.5, 1.25, 106);
+		App->scene_intro->CubMtB29->SetPos(-54.5, 1.25, 106);
+		App->scene_intro->CubMtB30->SetPos(-57.5, 1.25, 106);
+		App->scene_intro->CubMtB31->SetPos(-51.5, 1.25, 103);
+		App->scene_intro->CubMtB32->SetPos(-54.5, 1.25, 103);
+		App->scene_intro->CubMtB33->SetPos(-57.5, 1.25, 103);
+		App->scene_intro->CubMtB34->SetPos(-53, 3.25, 104.5);
+		App->scene_intro->CubMtB35->SetPos(-56, 3.25, 104.5);
+		App->scene_intro->CubMtB36->SetPos(-54.5, 5.25, 104.5);
+
+	}
+	else {
+
+
+		App->scene_intro->CubMtB1->SetPos(-50, 0, 50);
+		App->scene_intro->CubMtB2->SetPos(-53, 0, 50);
+		App->scene_intro->CubMtB3->SetPos(-56, 0, 50);
+		App->scene_intro->CubMtB4->SetPos(-59, 0, 50);
+		App->scene_intro->CubMtB5->SetPos(-50, 0, 53);
+		App->scene_intro->CubMtB6->SetPos(-53, 0, 53);
+		App->scene_intro->CubMtB7->SetPos(-56, 0, 53);
+		App->scene_intro->CubMtB8->SetPos(-59, 0, 53);
+		App->scene_intro->CubMtB9->SetPos(-51.5, 2, 53);
+		App->scene_intro->CubMtB10->SetPos(-54.5, 2, 53);
+		App->scene_intro->CubMtB11->SetPos(-57.5, 2, 53);
+		App->scene_intro->CubMtB12->SetPos(-51.5, 2, 50);
+		App->scene_intro->CubMtB13->SetPos(-54.5, 2, 50);
+		App->scene_intro->CubMtB14->SetPos(-57.5, 2, 50);
+		App->scene_intro->CubMtB15->SetPos(-53, 4, 51.5);
+		App->scene_intro->CubMtB16->SetPos(-56, 4, 51.5);
+		App->scene_intro->CubMtB17->SetPos(-54.5, 6, 51.5);
+
+		App->scene_intro->CubMtB20->SetPos(-50, 0, 90);
+		App->scene_intro->CubMtB21->SetPos(-53, 0, 90);
+		App->scene_intro->CubMtB22->SetPos(-56, 0, 90);
+		App->scene_intro->CubMtB23->SetPos(-59, 0, 90);
+		App->scene_intro->CubMtB24->SetPos(-50, 0, 93);
+		App->scene_intro->CubMtB25->SetPos(-53, 0, 93);
+		App->scene_intro->CubMtB26->SetPos(-56, 0, 93);
+		App->scene_intro->CubMtB27->SetPos(-59, 0, 93);
+		App->scene_intro->CubMtB28->SetPos(-51.5, 2, 93);
+		App->scene_intro->CubMtB29->SetPos(-54.5, 2, 93);
+		App->scene_intro->CubMtB30->SetPos(-57.5, 2, 93);
+		App->scene_intro->CubMtB31->SetPos(-51.5, 2, 90);
+		App->scene_intro->CubMtB32->SetPos(-54.5, 2, 90);
+		App->scene_intro->CubMtB33->SetPos(-57.5, 2, 90);
+		App->scene_intro->CubMtB34->SetPos(-53, 4, 91.5);
+		App->scene_intro->CubMtB35->SetPos(-56, 4, 91.5);
+		App->scene_intro->CubMtB36->SetPos(-54.5, 6, 91.5);
+	}
 	
 
 	
@@ -268,6 +308,7 @@ update_status ModulePlayer::Update(float dt)
 		}
 		else {
 			RestartFromCheckpoint();
+			RestartLevel();
 		}
 
 		

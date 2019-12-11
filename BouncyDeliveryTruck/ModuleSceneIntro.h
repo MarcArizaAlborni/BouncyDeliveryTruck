@@ -74,8 +74,8 @@ public:
 	PhysBody3D* CubRotB4;
 
 	//DETECT COLLIDERS
-	Cube DetectorCube[10];
-	PhysBody3D* Detector[10];
+	Cube DetectorCube[8];
+	PhysBody3D* Detector[8];
 
 
 	//OBSTACLES PART 3 (CUBE MOUNTAIN1)
@@ -165,6 +165,7 @@ public:
 	//---------------------------------------------------------------COLLIDERS BOOLS
 	bool GotPack1, GotPack2, GotPack3;
 	bool Have1, Have2, Have3, Have0;
+	bool Pack1Fall, Pack2Fall, Pack3Fall;
 
 
 };

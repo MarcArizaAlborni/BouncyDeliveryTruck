@@ -53,12 +53,12 @@ bool ModuleSceneIntro::Start()
 	wall1.axis = true;
 
 	//WALL2
-	Cube wall2(2, 3, 100);
+	/*Cube wall2(2, 3, 100);
 	wall2.SetPos(-10, 1, 60);
 	App->physics->AddBody(wall2, 100000);
 	wall2.wire = true;
 	wall2.color.Set(1.0f, 1.0f, 1.0f);
-	wall2.axis = true;
+	wall2.axis = true;*/
 	
 	//WALL3
 	Cube wall3(50, 3, 2);
@@ -140,13 +140,13 @@ bool ModuleSceneIntro::Start()
 	wall12.color.Set(1.0f, 1.0f, 1.0f);
 	wall12.axis = true;
 
-	//WALL13
-	Cube wall13(65, 3, 2);
-	wall13.SetPos(-105, 1, 110);
-	App->physics->AddBody(wall13, 100000);
-	wall13.wire = true;
-	wall13.color.Set(1.0f, 1.0f, 1.0f);
-	wall13.axis = true;
+	////WALL13
+	//Cube wall13(65, 3, 2);
+	//wall13.SetPos(-105, 1, 110);
+	//App->physics->AddBody(wall13, 100000);
+	//wall13.wire = true;
+	//wall13.color.Set(1.0f, 1.0f, 1.0f);
+	//wall13.axis = true;
 
 	//WALL14
 	Cube wall14(2, 3, 100);
@@ -186,11 +186,11 @@ bool ModuleSceneIntro::Start()
 	Ramp1.SetRotation(20, vec3(1, 0, 0));
 	App->physics->AddBody(Ramp1, 0);
 
-	//RAMP2
-	Cube Ramp2(35, 2, 45);
-	Ramp2.SetPos(-87, 2, 100);
-	Ramp2.SetRotation(20, vec3(-1, 0, 0));
-	App->physics->AddBody(Ramp2, 0);
+	////RAMP2
+	//Cube Ramp2(35, 2, 45);
+	//Ramp2.SetPos(-87, 2, 100);
+	//Ramp2.SetRotation(20, vec3(-1, 0, 0));
+	//App->physics->AddBody(Ramp2, 0);
 
 	//WALL 18
 	Cube wall18(2, 3, 130);
@@ -199,6 +199,8 @@ bool ModuleSceneIntro::Start()
 	wall18.wire = true;
 	wall18.color.Set(1.0f, 1.0f, 1.0f);
 	wall18.axis = true;
+
+	
 
 	//WALL19
 	/*Cube wall19(115, 3, 2);
@@ -213,6 +215,36 @@ bool ModuleSceneIntro::Start()
 	wall20.SetPos(-10, 1, -5);
 	App->physics->AddBody(wall20, 100000);
 	wall20.color.Set(1.0f, 1.0f, 1.0f);
+
+
+	//WALL 21
+	Cube wall21(3, 2.5, 15);
+	wall21.SetPos(-65, 1, 42);
+	wall21.SetRotation(20, vec3(0, 1, 0));
+	App->physics->AddBody(wall21, 100000);
+	wall21.color.Set(1.0f, 1.0f, 1.0f);
+
+	//WALL 22
+	Cube wall22(3, 2.5, 15);
+	wall22.SetPos(-65, 1, 97);
+	wall22.SetRotation(20, vec3(0, 1, 0));
+	App->physics->AddBody(wall22, 100000);
+	wall22.color.Set(1.0f, 1.0f, 1.0f);
+
+
+	//WALL 23
+	Cube wall23(3, 2.5, 15);
+	wall23.SetPos(-45, 1, 97);
+	wall23.SetRotation(20, vec3(0, -1, 0));
+	App->physics->AddBody(wall23, 100000);
+	wall23.color.Set(1.0f, 1.0f, 1.0f);
+
+	//WALL 24
+	Cube wall24(3, 2.5, 15);
+	wall24.SetPos(-45, 1, 42);
+	wall24.SetRotation(20, vec3(0, -1, 0));
+	App->physics->AddBody(wall24, 100000);
+	wall24.color.Set(1.0f, 1.0f, 1.0f);
 
 	//OBSTACLES PART 1
 
@@ -369,72 +401,72 @@ bool ModuleSceneIntro::Start()
 	//MTTTTTTTTTTTT2
 	//PIS1 FILA 1 MT2
 	CubMt20.size = { 2,2,2 };
-	CubMt20.SetPos(-50, 0, 90);
+	CubMt20.SetPos(-50, 0, 103);
 	CubMtB20 = App->physics->AddBody(CubMt20, 100);
 
 	CubMt21.size = { 2,2,2 };
-	CubMt21.SetPos(-53, 0, 90);
+	CubMt21.SetPos(-53, 0, 103);
 	CubMtB21 = App->physics->AddBody(CubMt21, 100);
 
 	CubMt22.size = { 2,2,2 };
-	CubMt22.SetPos(-56, 0, 90);
+	CubMt22.SetPos(-56, 0, 103);
 	CubMtB22 = App->physics->AddBody(CubMt22, 100);
 
 	CubMt23.size = { 2,2,2 };
-	CubMt23.SetPos(-59, 0, 90);
+	CubMt23.SetPos(-59, 0, 103);
 	CubMtB23 = App->physics->AddBody(CubMt23, 100);
 	//PIS 1 FILA 2 MT2
 	CubMt24.size = { 2,2,2 };
-	CubMt24.SetPos(-50, 0, 93);
+	CubMt24.SetPos(-50, 0, 106);
 	CubMtB24 = App->physics->AddBody(CubMt24, 100);
 
 	CubMt25.size = { 2,2,2 };
-	CubMt25.SetPos(-53, 0, 93);
+	CubMt25.SetPos(-53, 0, 106);
 	CubMtB25 = App->physics->AddBody(CubMt25, 100);
 
 	CubMt26.size = { 2,2,2 };
-	CubMt26.SetPos(-56, 0, 93);
+	CubMt26.SetPos(-56, 0, 106);
 	CubMtB26 = App->physics->AddBody(CubMt26, 100);
 
 	CubMt27.size = { 2,2,2 };
-	CubMt27.SetPos(-59, 0, 93);
+	CubMt27.SetPos(-59, 0, 106);
 	CubMtB27 = App->physics->AddBody(CubMt27, 100);
 	//PIS 2 FILA 2 MT2
 	CubMt28.size = { 2,2,2 };
-	CubMt28.SetPos(-51.5, 2, 93);
+	CubMt28.SetPos(-51.5, 2, 106);
 	CubMtB28 = App->physics->AddBody(CubMt28, 100);
 
 	CubMt29.size = { 2,2,2 };
-	CubMt29.SetPos(-54.5, 2, 93);
+	CubMt29.SetPos(-54.5, 2, 106);
 	CubMtB29 = App->physics->AddBody(CubMt29, 100);
 
 	CubMt30.size = { 2,2,2 };
-	CubMt30.SetPos(-57.5, 2, 93);
+	CubMt30.SetPos(-57.5, 2, 106);
 	CubMtB30 = App->physics->AddBody(CubMt30, 100);
 	//PIS 2 FILA 1 MT2
 	CubMt31.size = { 2,2,2 };
-	CubMt31.SetPos(-51.5, 2, 90);
+	CubMt31.SetPos(-51.5, 2, 103);
 	CubMtB31 = App->physics->AddBody(CubMt31, 100);
 
 	CubMt32.size = { 2,2,2 };
-	CubMt32.SetPos(-54.5, 2, 90);
+	CubMt32.SetPos(-54.5, 2, 103);
 	CubMtB32 = App->physics->AddBody(CubMt32, 100);
 
 	CubMt33.size = { 2,2,2 };
-	CubMt33.SetPos(-57.5, 2, 90);
+	CubMt33.SetPos(-57.5, 2, 103);
 	CubMtB33 = App->physics->AddBody(CubMt33, 100);
 	//PIS 3 FILA MIG MT2
 	CubMt34.size = { 2,2,2 };
-	CubMt34.SetPos(-53, 4, 91.5);
+	CubMt34.SetPos(-53, 4, 104.5);
 	CubMtB34 = App->physics->AddBody(CubMt34, 100);
 
 	CubMt35.size = { 2,2,2 };
-	CubMt35.SetPos(-56, 4, 91.5);
+	CubMt35.SetPos(-56, 4, 104.5);
 	CubMtB35 = App->physics->AddBody(CubMt35, 100);
 
 	//PIS 4 FILA MIG MT2
 	CubMt36.size = { 2,2,2 };
-	CubMt36.SetPos(-54.5, 6,91.5);
+	CubMt36.SetPos(-54.5, 6,104.5);
 	CubMtB36 = App->physics->AddBody(CubMt36, 100);
 
 
@@ -448,19 +480,24 @@ bool ModuleSceneIntro::Start()
 
 	//DETECT PACK1
 	DetectorCube[1].SetPos(-20, 2, -5);
-	DetectorCube[1].size = vec3{ 5, 1, 25 };
+	DetectorCube[1].size = { 5, 1, 25 };
 	//DETECT PACK2
 	DetectorCube[2].SetPos(-20, 2, -5);
-	DetectorCube[2].size = vec3{ 5, 1, 25 };
+	DetectorCube[2].size = { 5, 1, 25 };
 	//DETECT PACK3
 	DetectorCube[3].SetPos(-20, 2, -5);
-	DetectorCube[3].size = vec3{ 5, 1, 25 };
+	DetectorCube[3].size = { 5, 1, 25 };
 
 	//CHECKPOINT1
 	DetectorCube[4].SetPos(-54.5, 2, 110);
-	DetectorCube[4].size = vec3{ 25, 1, 5 };
+	DetectorCube[4].size = { 25, 3, 5 };
 
-	for (int i = 0; i < 10; i++)
+	//CHECK PACK STATE
+	/*DetectorCube[5].SetPos(-50, 0, 70);
+	DetectorCube[5].size=(300, 0.5, 300);*/
+		
+
+	for (int i = 0; i < 7; i++)
 	{
 		Detector[i] = App->physics->AddBody(DetectorCube[i], 0.0f);
 		Detector[i]->SensorDetector(true);
@@ -469,6 +506,7 @@ bool ModuleSceneIntro::Start()
 	}
 	Have1, Have2, Have3, Have0 = false;
 	GotPack1, GotPack2, GotPack3 = false;
+	Pack1Fall, Pack2Fall, Pack3Fall = false;
 	return ret;
 }
 
@@ -825,8 +863,39 @@ update_status ModuleSceneIntro::Update(float dt)
 	//WALL20
 	Cube wall20(3, 3, 28);
 	wall20.SetPos(-10, 1, -5);
-	wall20.color = Green;
+	wall20.color = Red;
 	wall20.Render();
+
+	//WALL21
+	Cube wall21(3, 2.5, 15);
+	wall21.SetPos(-65, 1, 42);
+	wall21.SetRotation(20, vec3(0, 1, 0));
+	wall21.color = Red;
+	wall21.Render();
+
+	//WALL22
+	Cube wall22(3, 2.5, 15);
+	wall22.SetPos(-65, 1, 97);
+	wall22.SetRotation(20, vec3(0, 1, 0));
+	wall22.color = Red;
+	wall22.Render();
+
+	//WALL23
+	Cube wall23(3, 2.5, 15);
+	wall23.SetPos(-45, 1, 97);
+	wall23.SetRotation(20, vec3(0, -1, 0));
+	wall23.color = Red;
+	wall23.Render();
+
+	//WALL24
+	Cube wall24(3, 2.5, 15);
+	wall24.SetPos(-45, 1, 42);
+	wall24.SetRotation(20, vec3(0, -1, 0));
+	wall24.color = Red;
+	wall24.Render();
+
+
+	
 
 	//TERRA
 	Plane FloorPlane(0, 1, 0, 0);
@@ -880,7 +949,21 @@ update_status ModuleSceneIntro::Update(float dt)
 void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 {
 
-	
+	/*if (body1 == Detector[5]) {
+		if (body2 == BallPack1) {
+			Pack1Fall = true;
+			LOG("PACK 1 FELL");
+		}
+		if (body2 == BallPack2) {
+			LOG("PACK 2 FELL");
+			Pack2Fall = true;
+		}
+		if (body2 == CubePack1) {
+			Pack3Fall = true;
+			LOG("PACK 3 FELL");
+		}
+	}*/
+
 	if (body1 == Detector[1]) {
 
 		if (body2 == BallPack1) {
@@ -908,12 +991,15 @@ void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 		}
 	}
 
-	if (body1 == Detector[4]) {
+	if (body1 == Detector[4] && App->player->CheckpointActive!=true ) {
 
-		App->player->CheckpointActive = true;
-		LOG("CHECKPOINT SAVED");
+		
+			App->player->CheckpointActive = true; //NOMES FUNCIONA SI TOCA UN ALTRE OBJECTE
+			LOG("CHECKPOINT SAVED ");
 		
 	}
+
+	
 
 	//FINISHLINE
 	if (body1 == Detector[0]) {
