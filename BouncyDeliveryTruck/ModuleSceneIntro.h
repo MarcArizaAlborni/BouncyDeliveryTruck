@@ -74,10 +74,97 @@ public:
 	PhysBody3D* CubRotB4;
 
 	//DETECT COLLIDERS
-	Cube DetectorCube[4];
-	PhysBody3D* Detector[4];
+	Cube DetectorCube[10];
+	PhysBody3D* Detector[10];
 
+
+	//OBSTACLES PART 3 (CUBE MOUNTAIN1)
+	//FORMA
+	Cube CubMt1;
+	Cube CubMt2;
+	Cube CubMt3;
+	Cube CubMt4;
+	Cube CubMt5;
+	Cube CubMt6;
+	Cube CubMt7;
+	Cube CubMt8;
+	Cube CubMt9;
+	Cube CubMt10;
+	Cube CubMt11;
+	Cube CubMt12;
+	Cube CubMt13;
+	Cube CubMt14;
+	Cube CubMt15;
+	Cube CubMt16;
+	Cube CubMt17;
+	
+	
+	//PHYSBODY
+	PhysBody3D* CubMtB1;
+	PhysBody3D* CubMtB2;
+	PhysBody3D* CubMtB3;
+	PhysBody3D* CubMtB4;
+	PhysBody3D* CubMtB5;
+	PhysBody3D* CubMtB6;
+	PhysBody3D* CubMtB7;
+	PhysBody3D* CubMtB8;
+	PhysBody3D* CubMtB9;
+	PhysBody3D* CubMtB10;
+	PhysBody3D* CubMtB11;
+	PhysBody3D* CubMtB12;
+	PhysBody3D* CubMtB13;
+	PhysBody3D* CubMtB14;
+	PhysBody3D* CubMtB15;
+	PhysBody3D* CubMtB16;
+	PhysBody3D* CubMtB17;
+	
+
+
+	//OBSTACLES PART 3 (CUBE MOUNTAIN1)
+	//FORMA
+	Cube CubMt20;
+	Cube CubMt21;
+	Cube CubMt22;
+	Cube CubMt23;
+	Cube CubMt24;
+	Cube CubMt25;
+	Cube CubMt26;
+	Cube CubMt27;
+	Cube CubMt28;
+	Cube CubMt29;
+	Cube CubMt30;
+	Cube CubMt31;
+	Cube CubMt32;
+	Cube CubMt33;
+	Cube CubMt34;
+	Cube CubMt35;
+	Cube CubMt36;
+	Cube CubMt37;
+
+	//PHYSBODY
+	PhysBody3D* CubMtB20;
+	PhysBody3D* CubMtB21;
+	PhysBody3D* CubMtB22;
+	PhysBody3D* CubMtB23;
+	PhysBody3D* CubMtB24;
+	PhysBody3D* CubMtB25;
+	PhysBody3D* CubMtB26;
+	PhysBody3D* CubMtB27;
+	PhysBody3D* CubMtB28;
+	PhysBody3D* CubMtB29;
+	PhysBody3D* CubMtB30;
+	PhysBody3D* CubMtB31;
+	PhysBody3D* CubMtB32;
+	PhysBody3D* CubMtB33;
+	PhysBody3D* CubMtB34;
+	PhysBody3D* CubMtB35;
+	PhysBody3D* CubMtB36;
+	PhysBody3D* CubMtB37;
+
+	
+	//---------------------------------------------------------------COLLIDERS BOOLS
 	bool GotPack1, GotPack2, GotPack3;
+	bool Have1, Have2, Have3, Have0;
 
 
 };

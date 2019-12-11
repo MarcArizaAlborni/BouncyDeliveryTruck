@@ -32,15 +32,18 @@ bool ModuleSceneIntro::Start()
 	Pack1.radius={ 0.5f };
 	Pack1.SetPos(0, 5, 11);
 	BallPack1=App->physics->AddBody(Pack1, 50);
-
+	//PACK2
 	Pack2.radius = { 0.5f };
 	Pack2.SetPos(0, 5, 9);
 	BallPack2 = App->physics->AddBody(Pack2, 50);
-
+	//PACK3
 	Pack3.size = { 1,1,1};
 	Pack3.SetPos(0, 5, 10);
 	CubePack1=App->physics->AddBody(Pack3, 100);
 	
+
+	//LEVEL
+
 	//WALL1
 	Cube wall1(2, 3, 70);
 	wall1.SetPos(10, 1, 15);
@@ -198,12 +201,12 @@ bool ModuleSceneIntro::Start()
 	wall18.axis = true;
 
 	//WALL19
-	Cube wall19(115, 3, 2);
+	/*Cube wall19(115, 3, 2);
 	wall19.SetPos(-48, 1, -20);
 	App->physics->AddBody(wall19, 100000);
 	wall19.wire = true;
 	wall19.color.Set(1.0f, 1.0f, 1.0f);
-	wall19.axis = true;
+	wall19.axis = true;*/
 
 	//WALL20
 	Cube wall20(3, 3, 28);
@@ -234,16 +237,12 @@ bool ModuleSceneIntro::Start()
 
 	//FILA BACHES 1
 	//BACHE1
-	Cylinder CylBache9(0.5, 10);
+	Cylinder CylBache9(0.5, 25);
 	CylBache9.SetRotation(90, vec3(0, 1, 0));
-	CylBache9.SetPos(12.5, -0.25, 116);
+	CylBache9.SetPos(12.5, -0.25, 124);
 	App->physics->AddBody(CylBache9, 100000);
 	
-	//BACHE2
-	Cylinder CylBache10(0.5, 10);
-	CylBache10.SetRotation(90, vec3(0, 1, 0));
-	CylBache10.SetPos(12.5, -0.25, 132);
-	App->physics->AddBody(CylBache10, 100000);
+	
 
 	//FILA CYLINDRES 2
 	//CylBache1
@@ -297,6 +296,147 @@ bool ModuleSceneIntro::Start()
 	Hinge2->setLimit(1, 0);
 
 	//OBSTACLES PART 3
+	//PIS1 FILA 1 MT1
+	CubMt1.size = { 2,2,2 };
+	CubMt1.SetPos(-50, 0, 50);
+	CubMtB1 = App->physics->AddBody(CubMt1, 100);
+
+	CubMt2.size = { 2,2,2 };
+	CubMt2.SetPos(-53, 0, 50);
+	CubMtB2 = App->physics->AddBody(CubMt2, 100);
+
+	CubMt3.size = { 2,2,2 };
+	CubMt3.SetPos(-56, 0, 50);
+	CubMtB3 = App->physics->AddBody(CubMt3, 100);
+
+	CubMt4.size = { 2,2,2 };
+	CubMt4.SetPos(-59, 0, 50);
+	CubMtB4 = App->physics->AddBody(CubMt4, 100);
+	//PIS 1 FILA 2 MT1
+	CubMt5.size = { 2,2,2 };
+	CubMt5.SetPos(-50, 0, 53);
+	CubMtB5 = App->physics->AddBody(CubMt5, 100);
+
+	CubMt6.size = { 2,2,2 };
+	CubMt6.SetPos(-53, 0, 53);
+	CubMtB6 = App->physics->AddBody(CubMt6, 100);
+
+	CubMt7.size = { 2,2,2 };
+	CubMt7.SetPos(-56, 0, 53);
+	CubMtB7 = App->physics->AddBody(CubMt7, 100);
+
+	CubMt8.size = { 2,2,2 };
+	CubMt8.SetPos(-59, 0, 53);
+	CubMtB8 = App->physics->AddBody(CubMt8, 100);
+	//PIS 2 FILA 2 MT1
+	CubMt9.size = { 2,2,2 };
+	CubMt9.SetPos(-51.5, 2, 53);
+	CubMtB9 = App->physics->AddBody(CubMt9, 100);
+
+	CubMt10.size = { 2,2,2 };
+	CubMt10.SetPos(-54.5, 2, 53);
+	CubMtB10 = App->physics->AddBody(CubMt10, 100);
+
+	CubMt11.size = { 2,2,2 };
+	CubMt11.SetPos(-57.5, 2, 53);
+	CubMtB11 = App->physics->AddBody(CubMt11, 100);
+	//PIS 2 FILA 1 MT1
+	CubMt12.size = { 2,2,2 };
+	CubMt12.SetPos(-51.5, 2, 50);
+	CubMtB12 = App->physics->AddBody(CubMt12, 100);
+
+	CubMt13.size = { 2,2,2 };
+	CubMt13.SetPos(-54.5, 2, 50);
+	CubMtB13 = App->physics->AddBody(CubMt13, 100);
+
+	CubMt14.size = { 2,2,2 };
+	CubMt14.SetPos(-57.5, 2, 50);
+	CubMtB14 = App->physics->AddBody(CubMt14, 100);
+	//PIS 3 FILA MIG MT1
+	CubMt15.size = { 2,2,2 };
+	CubMt15.SetPos(-53, 4, 51.5);
+	CubMtB15 = App->physics->AddBody(CubMt15, 100);
+
+	CubMt16.size = { 2,2,2 };
+	CubMt16.SetPos(-56, 4, 51.5);
+	CubMtB16 = App->physics->AddBody(CubMt16, 100);
+
+	//PIS 4 FILA MIG MT1
+	CubMt17.size = { 2,2,2 };
+	CubMt17.SetPos(-54.5, 6, 51.5);
+	CubMtB17 = App->physics->AddBody(CubMt17, 100);
+	//MT2-----------------------------------------------------------------------------------------------------------------------------------------------------
+	//MTTTTTTTTTTTT2
+	//PIS1 FILA 1 MT2
+	CubMt20.size = { 2,2,2 };
+	CubMt20.SetPos(-50, 0, 90);
+	CubMtB20 = App->physics->AddBody(CubMt20, 100);
+
+	CubMt21.size = { 2,2,2 };
+	CubMt21.SetPos(-53, 0, 90);
+	CubMtB21 = App->physics->AddBody(CubMt21, 100);
+
+	CubMt22.size = { 2,2,2 };
+	CubMt22.SetPos(-56, 0, 90);
+	CubMtB22 = App->physics->AddBody(CubMt22, 100);
+
+	CubMt23.size = { 2,2,2 };
+	CubMt23.SetPos(-59, 0, 90);
+	CubMtB23 = App->physics->AddBody(CubMt23, 100);
+	//PIS 1 FILA 2 MT2
+	CubMt24.size = { 2,2,2 };
+	CubMt24.SetPos(-50, 0, 93);
+	CubMtB24 = App->physics->AddBody(CubMt24, 100);
+
+	CubMt25.size = { 2,2,2 };
+	CubMt25.SetPos(-53, 0, 93);
+	CubMtB25 = App->physics->AddBody(CubMt25, 100);
+
+	CubMt26.size = { 2,2,2 };
+	CubMt26.SetPos(-56, 0, 93);
+	CubMtB26 = App->physics->AddBody(CubMt26, 100);
+
+	CubMt27.size = { 2,2,2 };
+	CubMt27.SetPos(-59, 0, 93);
+	CubMtB27 = App->physics->AddBody(CubMt27, 100);
+	//PIS 2 FILA 2 MT2
+	CubMt28.size = { 2,2,2 };
+	CubMt28.SetPos(-51.5, 2, 93);
+	CubMtB28 = App->physics->AddBody(CubMt28, 100);
+
+	CubMt29.size = { 2,2,2 };
+	CubMt29.SetPos(-54.5, 2, 93);
+	CubMtB29 = App->physics->AddBody(CubMt29, 100);
+
+	CubMt30.size = { 2,2,2 };
+	CubMt30.SetPos(-57.5, 2, 93);
+	CubMtB30 = App->physics->AddBody(CubMt30, 100);
+	//PIS 2 FILA 1 MT2
+	CubMt31.size = { 2,2,2 };
+	CubMt31.SetPos(-51.5, 2, 90);
+	CubMtB31 = App->physics->AddBody(CubMt31, 100);
+
+	CubMt32.size = { 2,2,2 };
+	CubMt32.SetPos(-54.5, 2, 90);
+	CubMtB32 = App->physics->AddBody(CubMt32, 100);
+
+	CubMt33.size = { 2,2,2 };
+	CubMt33.SetPos(-57.5, 2, 90);
+	CubMtB33 = App->physics->AddBody(CubMt33, 100);
+	//PIS 3 FILA MIG MT2
+	CubMt34.size = { 2,2,2 };
+	CubMt34.SetPos(-53, 4, 91.5);
+	CubMtB34 = App->physics->AddBody(CubMt34, 100);
+
+	CubMt35.size = { 2,2,2 };
+	CubMt35.SetPos(-56, 4, 91.5);
+	CubMtB35 = App->physics->AddBody(CubMt35, 100);
+
+	//PIS 4 FILA MIG MT2
+	CubMt36.size = { 2,2,2 };
+	CubMt36.SetPos(-54.5, 6,91.5);
+	CubMtB36 = App->physics->AddBody(CubMt36, 100);
+
 
 
 	//-----------------------------------------------------------------------------------------------------------------------------------------//
@@ -316,14 +456,19 @@ bool ModuleSceneIntro::Start()
 	DetectorCube[3].SetPos(-20, 2, -5);
 	DetectorCube[3].size = vec3{ 5, 1, 25 };
 
-	for (int i = 0; i < 4; i++)
+	//CHECKPOINT1
+	DetectorCube[4].SetPos(-54.5, 2, 110);
+	DetectorCube[4].size = vec3{ 25, 1, 5 };
+
+	for (int i = 0; i < 10; i++)
 	{
 		Detector[i] = App->physics->AddBody(DetectorCube[i], 0.0f);
 		Detector[i]->SensorDetector(true);
 		Detector[i]->collision_listeners.add(this);
 		
 	}
-
+	Have1, Have2, Have3, Have0 = false;
+	GotPack1, GotPack2, GotPack3 = false;
 	return ret;
 }
 
@@ -338,7 +483,7 @@ bool ModuleSceneIntro::CleanUp()
 // Update
 update_status ModuleSceneIntro::Update(float dt)
 {
-	//DRAW SPHERES COLOUR
+	//DRAW SPHERES COLOUR PACKS
 
 	BallPack1->GetTransform(&Pack1.transform);
 	Pack1.Render();
@@ -352,7 +497,7 @@ update_status ModuleSceneIntro::Update(float dt)
 
 	
 	
-	//PINTA Y COLOREA CON PEPA PIG
+	//PINTA Y COLOREA CON PEPA PIG (OBSTACLES)
 
 	//ROTATORIS 1
 	//ROTATORI1
@@ -396,22 +541,11 @@ update_status ModuleSceneIntro::Update(float dt)
 	//FILA BACHES 1
 
 	//BACHE1
-	Cylinder CylBache9(1, 10);
+	Cylinder CylBache9(0.5, 28);
 	CylBache9.SetRotation(90, vec3(0, 1, 0));
-	CylBache9.SetPos(12.5, -0.25, 116);
-
-	CylBache9.color = Yellow;
+	CylBache9.SetPos(12.5, 0.25, 124);
+	CylBache9.color = LightBlue;
 	CylBache9.Render();
-
-	//BACHE2
-	Cylinder CylBache10(1, 10);
-	CylBache10.SetRotation(90, vec3(0, 1, 0));
-	CylBache10.SetPos(12.5, -0.25, 132);
-
-	CylBache10.color = Yellow;
-	CylBache10.Render();
-
-
 
 
 	//FILA CYLINDRES 2
@@ -444,9 +578,120 @@ update_status ModuleSceneIntro::Update(float dt)
 	CylBache2.Render();
 
 
+	//CUBE MOUNTAIN1
 
+	CubMtB1->GetTransform(&CubMt1.transform);
+	CubMtB2->GetTransform(&CubMt2.transform);
+	CubMtB3->GetTransform(&CubMt3.transform);
+	CubMtB4->GetTransform(&CubMt4.transform);
+	CubMtB5->GetTransform(&CubMt5.transform);
+	CubMtB6->GetTransform(&CubMt6.transform);
+	CubMtB7->GetTransform(&CubMt7.transform);
+	CubMtB8->GetTransform(&CubMt8.transform);
+	CubMtB9->GetTransform(&CubMt9.transform);
+	CubMtB10->GetTransform(&CubMt10.transform);
+    CubMtB11->GetTransform(&CubMt11.transform);
+	CubMtB12->GetTransform(&CubMt12.transform);
+	CubMtB13->GetTransform(&CubMt13.transform);
+	CubMtB14->GetTransform(&CubMt14.transform);
+    CubMtB15->GetTransform(&CubMt15.transform);
+	CubMtB16->GetTransform(&CubMt16.transform);
+    CubMtB17->GetTransform(&CubMt17.transform);
 
-	//PINTA Y COLOREA CON DORA LA EXPLORADORA
+	CubMt1.color = Brown;
+	CubMt2.color = Brown;
+	CubMt3.color = Brown;
+	CubMt4.color = Brown;
+	CubMt5.color = Brown;
+	CubMt6.color = Brown;
+	CubMt7.color = Brown;
+	CubMt8.color = Brown;
+	CubMt9.color = Pink2;
+	CubMt10.color = Pink2;
+	CubMt11.color = Pink2;
+	CubMt12.color = Pink2;
+	CubMt13.color = Pink2;
+	CubMt14.color = Pink2;
+	CubMt15.color = Yellow;
+	CubMt16.color = Yellow;
+	CubMt17.color = Yellow;
+
+	CubMt1.Render();
+	CubMt2.Render();
+	CubMt3.Render();
+	CubMt4.Render();
+	CubMt5.Render();
+	CubMt6.Render();
+	CubMt7.Render();
+	CubMt8.Render();
+	CubMt9.Render();
+	CubMt10.Render();
+	CubMt11.Render();
+	CubMt12.Render();
+	CubMt13.Render();
+	CubMt14.Render();
+	CubMt15.Render();
+	CubMt16.Render();
+	CubMt17.Render();
+	
+	//CUBE MOUNTAIN 2
+
+	CubMtB20->GetTransform(&CubMt20.transform);
+	CubMtB21->GetTransform(&CubMt21.transform);
+	CubMtB22->GetTransform(&CubMt22.transform);
+	CubMtB23->GetTransform(&CubMt23.transform);
+	CubMtB24->GetTransform(&CubMt24.transform);
+	CubMtB25->GetTransform(&CubMt25.transform);
+	CubMtB26->GetTransform(&CubMt26.transform);
+	CubMtB27->GetTransform(&CubMt27.transform);
+	CubMtB28->GetTransform(&CubMt28.transform);
+	CubMtB29->GetTransform(&CubMt29.transform);
+	CubMtB30->GetTransform(&CubMt30.transform);
+	CubMtB31->GetTransform(&CubMt31.transform);
+	CubMtB32->GetTransform(&CubMt32.transform);
+	CubMtB33->GetTransform(&CubMt33.transform);
+	CubMtB34->GetTransform(&CubMt34.transform);
+	CubMtB35->GetTransform(&CubMt35.transform);
+	CubMtB36->GetTransform(&CubMt36.transform);
+
+	CubMt20.color = Brown;
+	CubMt21.color = Brown;
+	CubMt22.color = Brown;
+	CubMt23.color = Brown;
+	CubMt24.color = Brown;
+	CubMt25.color = Brown;
+	CubMt26.color = Brown;
+	CubMt27.color = Brown;
+	CubMt28.color = Brown;
+	CubMt29.color =Pink2;
+	CubMt30.color =Pink2;
+	CubMt31.color =Pink2;
+	CubMt32.color =Pink2;
+	CubMt33.color =Pink2;
+	CubMt34.color = Yellow;
+	CubMt35.color = Yellow;
+	CubMt36.color = Yellow;
+
+	CubMt20.Render();
+	CubMt21.Render();
+	CubMt22.Render();
+	CubMt23.Render();
+	CubMt24.Render();
+	CubMt25.Render();
+	CubMt26.Render();
+	CubMt27.Render();
+	CubMt28.Render();
+	CubMt29.Render();
+	CubMt30.Render();
+	CubMt31.Render();
+	CubMt32.Render();
+	CubMt33.Render();
+	CubMt34.Render();
+	CubMt35.Render();
+	CubMt36.Render();
+	
+
+	//PINTA Y COLOREA CON DORA LA EXPLORADORA(NIVELL)
 
 	//WALL1
 	Cube wall1(2, 3, 70);
@@ -571,11 +816,11 @@ update_status ModuleSceneIntro::Update(float dt)
 	wall18.color = Green;
 	wall18.Render();
 
-	//WALL19
-	Cube wall19(115, 3, 2);
-	wall19.SetPos(-48, 1, -20);
-	wall19.color = Green;
-	wall19.Render();
+	////WALL19
+	//Cube wall19(115, 3, 2);
+	//wall19.SetPos(-48, 1, -20);
+	//wall19.color = Green;
+	//wall19.Render();
 
 	//WALL20
 	Cube wall20(3, 3, 28);
@@ -612,7 +857,22 @@ update_status ModuleSceneIntro::Update(float dt)
 	
 
 
+	//WIN LOSE
 
+	if (Have3==true) {
+		LOG("ALL 3 DELIVERED");
+		
+	}
+	else if (Have2==true) {
+		LOG("2 DELIVERED");
+	}
+	else if (Have1==true) {
+		LOG("1 DELIVERED");
+	}
+	else if (Have0==true) {
+		LOG("0 DELIVERED");
+	}
+	
 
 	return UPDATE_CONTINUE;
 }
@@ -648,12 +908,40 @@ void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 		}
 	}
 
+	if (body1 == Detector[4]) {
+
+		App->player->CheckpointActive = true;
+		LOG("CHECKPOINT SAVED");
+		
+	}
+
+	//FINISHLINE
 	if (body1 == Detector[0]) {
 
-		if (GotPack1 == true && GotPack2 && true && GotPack3 == true) {
+		App->player->CheckpointActive = false;
+		if (GotPack1 == true && GotPack2 == true && GotPack3 == true) {
 
 			//win
-			LOG("WIN");
+			LOG("WIN ALL 3 PACKS");
+			Have3 = true;
+			Have1, Have2, Have0 = false;
+		}
+		else if ((GotPack1 == true && GotPack2 == true) || (GotPack1==true && GotPack3==true)|| (GotPack2 == true &&GotPack2==true)) {
+
+			LOG("WIN 2 OUT OF 3")
+				Have2 = true;
+			Have1, Have3, Have0 = false;
+		}
+		else if( (GotPack1==true) ||( GotPack2==true)||(GotPack3==true)) {
+
+			LOG("WIN 1 OUF OF 3")
+				Have1 = true;
+			Have2, Have3, Have0 = false;;
+		}
+		else {
+			LOG("LOSE 0 OUT OF 3");
+			Have0 = true;
+			Have1, Have2, Have3 = false;
 		}
 		
 	}

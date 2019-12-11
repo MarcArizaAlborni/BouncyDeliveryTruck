@@ -18,6 +18,10 @@ public:
 	bool Start();
 	update_status Update(float dt);
 	bool CleanUp();
+	void Restart();
+	void RestartLevel();
+	void RestartFromCheckpoint();
+	bool CheckpointActive;
 
 public:
 
