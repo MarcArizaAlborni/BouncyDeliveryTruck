@@ -3,6 +3,7 @@
 #include "p2DynArray.h"
 #include "Globals.h"
 #include "Primitive.h"
+#include "ModuleAudio.h"
 
 #define MAX_SNAKE 2
 
@@ -166,6 +167,13 @@ public:
 	bool GotPack1, GotPack2, GotPack3;
 	bool Have1, Have2, Have3, Have0;
 	bool Pack1Fall, Pack2Fall, Pack3Fall;
+
+
+
+	//--------------------------------AUDIO I COSES
+
+	char* Music;
+	Mix_Chunk *Sortida;
 
 
 };

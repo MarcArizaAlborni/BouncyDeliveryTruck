@@ -3,6 +3,7 @@
 #include "ModuleSceneIntro.h"
 #include "Primitive.h"
 #include "PhysBody3D.h"
+#include "ModuleAudio.h"
 
 ModuleSceneIntro::ModuleSceneIntro(Application* app, bool start_enabled) : Module(app, start_enabled)
 {
@@ -15,7 +16,10 @@ ModuleSceneIntro::~ModuleSceneIntro()
 bool ModuleSceneIntro::Start()
 {
 
+	//MUSIC
+	Music = "Audio/CrashMusic.ogg";
 
+	App->audio->PlayMusic(Music);
 
 	LOG("Loading Intro assets");
 	bool ret = true;

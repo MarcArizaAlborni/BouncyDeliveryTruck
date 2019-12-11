@@ -41,6 +41,8 @@ bool ModuleAudio::Init()
 		ret = false;
 	}
 
+	Mix_VolumeMusic(20);
+
 	return ret;
 }
 
@@ -125,7 +127,7 @@ unsigned int ModuleAudio::LoadFx(const char* path)
 	unsigned int ret = 0;
 
 	Mix_Chunk* chunk = Mix_LoadWAV(path);
-
+	App->scene_intro->Sortida = Mix_LoadWAV("Audio/Francesco.wav");
 	if(chunk == NULL)
 	{
 		LOG("Cannot load wav %s. Mix_GetError(): %s", path, Mix_GetError());
