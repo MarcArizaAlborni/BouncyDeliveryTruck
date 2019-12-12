@@ -52,9 +52,7 @@ bool ModuleSceneIntro::Start()
 	Cube wall1(2, 3, 70);
 	wall1.SetPos(10, 1, 15);
 	App->physics->AddBody(wall1, 100000);
-	wall1.wire = true;
 	wall1.color.Set(1.0f, 1.0f, 1.0f);
-	wall1.axis = true;
 
 	//WALL2
 	/*Cube wall2(2, 3, 100);
@@ -318,6 +316,7 @@ bool ModuleSceneIntro::Start()
 
 	btHingeConstraint* Hinge1 = App->physics->AddConstraintHinge(*CubRotB1, *CubRotB2, vec3{ 0,0,0 }, vec3{ 10, 0,0 }, vec3{ 0,1,0 }, vec3{ 0,1,0 }, true);
 	Hinge1->setLimit(1, 0);
+
 	
 	//OBJECTE 2
 
@@ -473,6 +472,113 @@ bool ModuleSceneIntro::Start()
 	CubMt36.SetPos(-54.5, 6,104.5);
 	CubMtB36 = App->physics->AddBody(CubMt36, 100);
 
+	//---------------------------------------FINISH LINE---------------------------------------------------------------------------------------//
+
+	//PIS 1
+	FinishL1.size = { 2,2,2 };
+	FinishL1.SetPos(-24, 0, -17);
+	FinishBL1 = App->physics->AddBody(FinishL1, 1);
+
+	FinishL2.size = { 2,2,2 };
+	FinishL2.SetPos(-24, 0, -15);
+	FinishBL2 = App->physics->AddBody(FinishL2, 1);
+
+	FinishL3.size = { 2,2,2 };
+	FinishL3.SetPos(-24, 0, -13);
+	FinishBL3 = App->physics->AddBody(FinishL3, 1);
+
+	FinishL4.size = { 2,2,2 };
+	FinishL4.SetPos(-24, 0, -11);
+	FinishBL4 = App->physics->AddBody(FinishL4, 1);
+
+	FinishL5.size = { 2,2,2 };
+	FinishL5.SetPos(-24, 0, -9);
+	FinishBL5 = App->physics->AddBody(FinishL5, 1);
+
+	FinishL6.size = { 2,2,2 };
+	FinishL6.SetPos(-24, 0, -7);
+	FinishBL6 = App->physics->AddBody(FinishL6, 1);
+
+	FinishL7.size = { 2,2,2 };
+	FinishL7.SetPos(-24, 0, -5);
+	FinishBL7 = App->physics->AddBody(FinishL7, 1);
+
+	FinishL8.size = { 2,2,2 };
+	FinishL8.SetPos(-24, 0, -3);
+	FinishBL8 = App->physics->AddBody(FinishL8, 1);
+
+	FinishL9.size = { 2,2,2 };
+	FinishL9.SetPos(-24, 0, -1);
+	FinishBL9 = App->physics->AddBody(FinishL9, 1);
+
+	FinishL10.size = { 2,2,2 };
+	FinishL10.SetPos(-24, 0, 1);
+	FinishBL10 = App->physics->AddBody(FinishL10, 1);
+
+	FinishL11.size = { 2,2,2 };
+	FinishL11.SetPos(-24, 0, 3);
+	FinishBL11 = App->physics->AddBody(FinishL11, 1);
+
+	FinishL12.size = { 2,2,2 };
+	FinishL12.SetPos(-24, 0, 5);
+	FinishBL12 = App->physics->AddBody(FinishL12, 1);
+
+	FinishL13.size = { 2,2,2 };
+	FinishL13.SetPos(-24, 0, 7);
+	FinishBL13 = App->physics->AddBody(FinishL13, 1);
+
+	//PIS2 FINISHLINE
+	FinishL14.size = { 2,2,2 };
+	FinishL14.SetPos(-24, 3, -17);
+	FinishBL14 = App->physics->AddBody(FinishL14, 1);
+
+	FinishL15.size = { 2,2,2 };
+	FinishL15.SetPos(-24, 3, -15);
+	FinishBL15 = App->physics->AddBody(FinishL15, 1);
+
+	FinishL16.size = { 2,2,2 };
+	FinishL16.SetPos(-24, 3, -13);
+	FinishBL16 = App->physics->AddBody(FinishL16, 1);
+
+	FinishL17.size = { 2,2,2 };
+	FinishL17.SetPos(-24, 3, -11);
+	FinishBL17 = App->physics->AddBody(FinishL17, 1);
+
+	FinishL18.size = { 2,2,2 };
+	FinishL18.SetPos(-24, 3, -9);
+	FinishBL18 = App->physics->AddBody(FinishL18, 1);
+
+	FinishL19.size = { 2,2,2 };
+	FinishL19.SetPos(-24, 3, -7);
+	FinishBL19 = App->physics->AddBody(FinishL19, 1);
+
+	FinishL20.size = { 2,2,2 };
+	FinishL20.SetPos(-24, 3, -5);
+	FinishBL20 = App->physics->AddBody(FinishL20, 1);
+
+	FinishL21.size = { 2,2,2 };
+	FinishL21.SetPos(-24, 3, -3);
+	FinishBL21 = App->physics->AddBody(FinishL21, 1);
+
+	FinishL22.size = { 2,2,2 };
+	FinishL22.SetPos(-24, 3, -1);
+	FinishBL22 = App->physics->AddBody(FinishL22, 1);
+
+	FinishL23.size = { 2,2,2 };
+	FinishL23.SetPos(-24, 3, 1);
+	FinishBL23 = App->physics->AddBody(FinishL23, 1);
+
+	FinishL24.size = { 2,2,2 };
+	FinishL24.SetPos(-24, 3, 3);
+	FinishBL24 = App->physics->AddBody(FinishL24, 1);
+
+	FinishL25.size = { 2,2,2 };
+	FinishL25.SetPos(-24, 3, 5);
+	FinishBL25 = App->physics->AddBody(FinishL25, 1);
+
+	FinishL26.size = { 2,2,2 };
+	FinishL26.SetPos(-24, 3, 7);
+	FinishBL26 = App->physics->AddBody(FinishL26, 1);
 
 
 	//-----------------------------------------------------------------------------------------------------------------------------------------//
@@ -511,6 +617,7 @@ bool ModuleSceneIntro::Start()
 	Have1, Have2, Have3, Have0 = false;
 	GotPack1, GotPack2, GotPack3 = false;
 	Pack1Fall, Pack2Fall, Pack3Fall = false;
+	
 	return ret;
 }
 
@@ -536,7 +643,113 @@ update_status ModuleSceneIntro::Update(float dt)
 	CubePack1->GetTransform(&Pack3.transform);
 	Pack3.Render();
 
+	//FINISHLINE
 
+	FinishBL1->GetTransform(&FinishL1.transform);
+	FinishL1.color = Black;
+	FinishL1.Render();
+
+	FinishBL2->GetTransform(&FinishL2.transform);
+	FinishL2.color = White;
+	FinishL2.Render();
+
+	FinishBL3->GetTransform(&FinishL3.transform);
+	FinishL3.color = Black;
+	FinishL3.Render();
+
+	FinishBL4->GetTransform(&FinishL4.transform);
+	FinishL4.color = White;
+	FinishL4.Render();
+
+	FinishBL5->GetTransform(&FinishL5.transform);
+	FinishL5.color = Black;
+	FinishL5.Render();
+
+	FinishBL6->GetTransform(&FinishL6.transform);
+	FinishL6.color = White;
+	FinishL6.Render();
+
+	FinishBL7->GetTransform(&FinishL7.transform);
+	FinishL7.color = Black;
+	FinishL7.Render();
+
+	FinishBL8->GetTransform(&FinishL8.transform);
+	FinishL8.color = White;
+	FinishL8.Render();
+
+	FinishBL9->GetTransform(&FinishL9.transform);
+	FinishL9.color = Black;
+	FinishL9.Render();
+
+	FinishBL10->GetTransform(&FinishL10.transform);
+	FinishL10.color = White;
+	FinishL10.Render();
+
+	FinishBL11->GetTransform(&FinishL11.transform);
+	FinishL11.color = Black;
+	FinishL11.Render();
+
+	FinishBL12->GetTransform(&FinishL12.transform);
+	FinishL12.color = White;
+	FinishL12.Render();
+
+	FinishBL13->GetTransform(&FinishL13.transform);
+	FinishL13.color = Black;
+	FinishL13.Render();
+
+	FinishBL14->GetTransform(&FinishL14.transform);
+	FinishL14.color = White;
+	FinishL14.Render();
+
+	FinishBL15->GetTransform(&FinishL15.transform);
+	FinishL15.color = Black;
+	FinishL15.Render();
+
+	FinishBL16->GetTransform(&FinishL16.transform);
+	FinishL16.color = White;
+	FinishL16.Render();
+
+	FinishBL17->GetTransform(&FinishL17.transform);
+	FinishL17.color = Black;
+	FinishL17.Render();
+
+	FinishBL18->GetTransform(&FinishL18.transform);
+	FinishL18.color = White;
+	FinishL18.Render();
+
+	FinishBL19->GetTransform(&FinishL19.transform);
+	FinishL19.color = Black;
+	FinishL19.Render();
+
+	FinishBL20->GetTransform(&FinishL20.transform);
+	FinishL20.color = White;
+	FinishL20.Render();
+
+	FinishBL21->GetTransform(&FinishL21.transform);
+	FinishL21.color = Black;
+	FinishL21.Render();
+
+	FinishBL22->GetTransform(&FinishL22.transform);
+	FinishL22.color = White;
+	FinishL22.Render();
+
+	FinishBL23->GetTransform(&FinishL23.transform);
+	FinishL23.color = Black;
+	FinishL23.Render();
+
+	FinishBL24->GetTransform(&FinishL24.transform);
+	FinishL24.color = White;
+	FinishL24.Render();
+
+	FinishBL25->GetTransform(&FinishL25.transform);
+	FinishL25.color = Black;
+	FinishL25.Render();
+
+	FinishBL26->GetTransform(&FinishL26.transform);
+	FinishL26.color = White;
+	FinishL26.Render();
+
+	
 	
 	
 	//PINTA Y COLOREA CON PEPA PIG (OBSTACLES)
@@ -935,11 +1148,30 @@ update_status ModuleSceneIntro::Update(float dt)
 	if (Have3==true) {
 		LOG("ALL 3 DELIVERED");
 		
+		Cube Win3Plane(10, 1, 10);
+		wall23.SetRotation(90, vec3(1, 1, 1));
+		Win3Plane.color = Pink2;
+		Win3Plane.Render();
+		
 	}
 	else if (Have2==true) {
+
+		Cube Win3Plane(10, 1, 10);
+		wall23.SetRotation(90, vec3(0, 1, 0));
+		Win3Plane.color = Pink2;
+		Win3Plane.Render();
+
+
 		LOG("2 DELIVERED");
 	}
 	else if (Have1==true) {
+
+		
+		Cube Win3Plane(10, 5, 10);
+		wall23.SetRotation(90, vec3(1, 1, 1));
+		Win3Plane.color = Pink2;
+		Win3Plane.Render();
+
 		LOG("1 DELIVERED");
 	}
 	else if (Have0==true) {
@@ -953,20 +1185,7 @@ update_status ModuleSceneIntro::Update(float dt)
 void ModuleSceneIntro::OnCollision(PhysBody3D* body1, PhysBody3D* body2)
 {
 
-	/*if (body1 == Detector[5]) {
-		if (body2 == BallPack1) {
-			Pack1Fall = true;
-			LOG("PACK 1 FELL");
-		}
-		if (body2 == BallPack2) {
-			LOG("PACK 2 FELL");
-			Pack2Fall = true;
-		}
-		if (body2 == CubePack1) {
-			Pack3Fall = true;
-			LOG("PACK 3 FELL");
-		}
-	}*/
+	
 
 	if (body1 == Detector[1]) {
 

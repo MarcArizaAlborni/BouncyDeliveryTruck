@@ -56,6 +56,8 @@ public:
 	PhysBody3D* CubePack1;
 
 
+
+
 	//FORMA
 	Cube CubRot1;
 	Cube CubRot2;
@@ -98,7 +100,7 @@ public:
 	Cube CubMt15;
 	Cube CubMt16;
 	Cube CubMt17;
-	
+
 	
 	//PHYSBODY
 	PhysBody3D* CubMtB1;
@@ -162,11 +164,97 @@ public:
 	PhysBody3D* CubMtB36;
 	PhysBody3D* CubMtB37;
 
+
+	//FINISH LINE
+	//FORMA
+	Cube FinishL1;
+	Cube FinishL2;
+	Cube FinishL3;
+	Cube FinishL4;
+	Cube FinishL5;
+	Cube FinishL6;
+	Cube FinishL7;
+	Cube FinishL8;
+	Cube FinishL9;
+	Cube FinishL10;
+	Cube FinishL11;
+	Cube FinishL12;
+	Cube FinishL13;
+	Cube FinishL14;
+	Cube FinishL15;
+	Cube FinishL16;
+	Cube FinishL17;
+	Cube FinishL18;
+	Cube FinishL19;
+	Cube FinishL20;
+	Cube FinishL21;
+	Cube FinishL22;
+	Cube FinishL23;
+	Cube FinishL24;
+	Cube FinishL25;
+	Cube FinishL26;
 	
+
+	//PHYSBODY
+
+	PhysBody3D* FinishBL1;
+	PhysBody3D* FinishBL2;
+	PhysBody3D* FinishBL3;
+	PhysBody3D* FinishBL4;
+	PhysBody3D* FinishBL5;
+	PhysBody3D* FinishBL6;
+	PhysBody3D* FinishBL7;
+	PhysBody3D* FinishBL8;
+	PhysBody3D* FinishBL9;
+	PhysBody3D* FinishBL10;
+	PhysBody3D* FinishBL11;
+	PhysBody3D* FinishBL12;
+	PhysBody3D* FinishBL13;
+	PhysBody3D* FinishBL14;
+	PhysBody3D* FinishBL15;
+	PhysBody3D* FinishBL16;
+	PhysBody3D* FinishBL17;
+	PhysBody3D* FinishBL18;
+	PhysBody3D* FinishBL19;
+	PhysBody3D* FinishBL20;
+	PhysBody3D* FinishBL21;
+	PhysBody3D* FinishBL22;
+	PhysBody3D* FinishBL23;
+	PhysBody3D* FinishBL24;
+	PhysBody3D* FinishBL25;
+	PhysBody3D* FinishBL26;
+
+	
+	//WIN CONFETI
+
+	Cube FinishPanel;
+	Cube FinishNum1;
+	Cube FinishNum2;
+	Cube FinishNum3;
+	Cube FinishNum4;
+	Cube FinishNum5;
+	Cube FinishNum6;
+	Cube FinishNum7;
+	Cube FinishNum8;
+	Cube FinishNum9;
+
+	PhysBody3D* BFinishPanel;
+	PhysBody3D* BFinishNum1;
+	PhysBody3D* BFinishNum2;
+	PhysBody3D* BFinishNum3;
+	PhysBody3D* BFinishNum4;
+	PhysBody3D* BFinishNum5;
+	PhysBody3D* BFinishNum6;
+	PhysBody3D* BFinishNum7;
+	PhysBody3D* BFinishNum8;
+	PhysBody3D* BFinishNum9;
+
 	//---------------------------------------------------------------COLLIDERS BOOLS
 	bool GotPack1, GotPack2, GotPack3;
 	bool Have1, Have2, Have3, Have0;
 	bool Pack1Fall, Pack2Fall, Pack3Fall;
+
+	
 
 
 
