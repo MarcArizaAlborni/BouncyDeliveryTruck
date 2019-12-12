@@ -37,3 +37,4 @@ extern Color Pink;
 extern Color Pink2;
 extern Color DarkGreen;
 extern Color Brown;
+extern Color SkyBlue;

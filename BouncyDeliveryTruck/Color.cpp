@@ -13,3 +13,4 @@ Color Yellow = Color(1.0f, 1.0f, 0.0f);
 Color Pink2 = Color(0.9f, 0.6f, 0.7f);
 Color DarkGreen = Color(1.0f, 1.0f, 0.0f);
 Color Brown = Color(0.45f, 0.24f, 0.05f);
+Color SkyBlue = Color(0.49f, 0.95f, 0.92f);
