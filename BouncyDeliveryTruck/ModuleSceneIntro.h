@@ -77,8 +77,8 @@ public:
 	PhysBody3D* CubRotB4;
 
 	//DETECT COLLIDERS
-	Cube DetectorCube[8];
-	PhysBody3D* Detector[8];
+	Cube DetectorCube[18];
+	PhysBody3D* Detector[18];
 
 
 	//OBSTACLES PART 3 (CUBE MOUNTAIN1)
@@ -225,37 +225,64 @@ public:
 	PhysBody3D* FinishBL26;
 
 	
-	//WIN CONFETI
+	
+	
+	
 
-	Cube FinishPanel;
-	Cube FinishNum1;
-	Cube FinishNum2;
-	Cube FinishNum3;
-	Cube FinishNum4;
-	Cube FinishNum5;
-	Cube FinishNum6;
-	Cube FinishNum7;
-	Cube FinishNum8;
-	Cube FinishNum9;
+	//Bridge
 
-	PhysBody3D* BFinishPanel;
-	PhysBody3D* BFinishNum1;
-	PhysBody3D* BFinishNum2;
-	PhysBody3D* BFinishNum3;
-	PhysBody3D* BFinishNum4;
-	PhysBody3D* BFinishNum5;
-	PhysBody3D* BFinishNum6;
-	PhysBody3D* BFinishNum7;
-	PhysBody3D* BFinishNum8;
-	PhysBody3D* BFinishNum9;
+	Cube Bridge1;
+	Cube Bridge2Dup;
+	Cube Bridge2;
+	Cube Bridge3;
+	Cube Bridge4;
+	Cube Bridge5;
+	Cube Bridge6;
+	Cube Bridge7;
+	Cube Bridge8;
+	Cube Bridge9;
+	Cube Bridge10;
+	Cube Bridge11;
+	Cube Bridge12;
+	Cube Bridge13;
+	Cube Bridge14;
+	Cube Bridge15;
+	Cube Bridge16;
+	
+	
 
+	PhysBody3D*  Bridge1B;
+	PhysBody3D*  Bridge2B;
+	PhysBody3D*  Bridge3B;
+	PhysBody3D*  Bridge4B;
+	PhysBody3D*  Bridge5B;
+	PhysBody3D*  Bridge6B;
+	PhysBody3D*  Bridge7B;
+	PhysBody3D*  Bridge8B;
+	PhysBody3D*  Bridge9B;
+	PhysBody3D*  Bridge10B;
+
+	PhysBody3D*  Bridge11B;
+	PhysBody3D*  Bridge12B;
+	PhysBody3D*  Bridge13B;
+	PhysBody3D*  Bridge14B;
+	PhysBody3D*  Bridge15B;
+	PhysBody3D*  Bridge16B;
+	
+
+	bool OneSpawned1;
+
+
+	//REWARD
+
+	
 	//---------------------------------------------------------------COLLIDERS BOOLS
 	bool GotPack1, GotPack2, GotPack3;
 	bool Have1, Have2, Have3, Have0;
 	bool Pack1Fall, Pack2Fall, Pack3Fall;
-
+	bool CheckpointPack1, CheckpointPack2, CheckpointPack3;
 	
-
+	
 
 
 	//--------------------------------AUDIO I COSES
@@ -264,4 +291,6 @@ public:
 	Mix_Chunk *Sortida;
 
 
+	PhysBody3D* PartB1, *PartB2, *PartB3, *PartB4, *PartB5, *PartB6, *PartB7;
+	Cube Part1, Part2, Part3, Part4, Part5, Part6, Part7;
 };

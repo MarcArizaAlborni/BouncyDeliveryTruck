@@ -251,10 +251,16 @@ void ModulePlayer::RestartFromCheckpoint()
 	vehicle->vehicle->getRigidBody()->setAngularVelocity({ 0,0,0 });
 	//POSITION
 	vehicle->SetPos(-54.5, 0, 110);
-
-	App->scene_intro->BallPack1->SetPos(-54.5, 2, 111);
-	App->scene_intro->BallPack2->SetPos(-54.5, 2, 109);
-	App->scene_intro->CubePack1->SetPos(-54.5, 3, 110);
+	if (App->scene_intro->CheckpointPack1 == true) {
+		App->scene_intro->BallPack1->SetPos(-54.5, 2, 111);
+	}
+	if (App->scene_intro->CheckpointPack2 == true) {
+		App->scene_intro->BallPack2->SetPos(-54.5, 2, 109);
+	}
+	if (App->scene_intro->CheckpointPack3 == true) {
+		App->scene_intro->CubePack1->SetPos(-54.5, 3, 110);
+	}
+	
 
 
 	App->scene_intro->Have1, App->scene_intro->Have2, App->scene_intro->Have3, App->scene_intro->Have0 = false;
@@ -299,7 +305,15 @@ update_status ModulePlayer::Update(float dt)
 		
 	}
 
-	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_REPEAT) {
+	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN) {
+
+		CheckpointActive == false;
+		App->scene_intro->CheckpointPack1 = false;
+		App->scene_intro->CheckpointPack2 = false;
+		App->scene_intro->CheckpointPack3 = false;
+	}
+
+	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN) {
 
 		if (CheckpointActive != true) {
 
