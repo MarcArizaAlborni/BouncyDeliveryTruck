@@ -22,6 +22,19 @@ public:
 
 	void OnCollision(PhysBody3D* body1, PhysBody3D* body2);
 
+	//Level Loading Functions
+
+	void LoadLevelWalls();
+	void DrawLevelWalls();
+	void LoadStaticObstacles();
+	void DrawStaticObstacles();
+	void LoadDynamicObstacles();
+	void DrawDynamicObstacles();
+	void LoadBridge();
+	void DrawBridge();
+	void RewardsChoose();
+	void LoadRewards();
+
 public:
 	
 	
@@ -58,16 +71,15 @@ public:
 
 
 
-	//FORMA
+	//FORMA Moving Obstacle
 	Cube CubRot1;
 	Cube CubRot2;
 	Cube CubRot3;
 	Cube CubRot4;
-	
-
 	Cylinder CylRot1;
 	Cylinder CylRot2;
-	//PHYSBODY
+
+	//PHYSBODY Moving Obstacle
 	PhysBody3D* CylRotB1;
 	PhysBody3D* CylRotB2;
 
@@ -270,6 +282,12 @@ public:
 	PhysBody3D*  Bridge16B;
 	
 
+	//BOOST AREA
+	Cube Boost1;
+	PhysBody3D* BoostB1;
+	
+	
+
 	bool OneSpawned1;
 
 
@@ -281,7 +299,7 @@ public:
 	bool Have1, Have2, Have3, Have0;
 	bool Pack1Fall, Pack2Fall, Pack3Fall;
 	bool CheckpointPack1, CheckpointPack2, CheckpointPack3;
-	
+	bool BoostActive;
 	
 
 

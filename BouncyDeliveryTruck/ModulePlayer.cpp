@@ -113,6 +113,7 @@ bool ModulePlayer::CleanUp()
 
 void ModulePlayer::Restart()
 {
+	App->scene_intro->BoostActive = false;
 	float RestartPos[20];
 	//LISTA D'OBJECTES DEL COTXE, NO SE CONTAR OSIGUI QUE EL 20 ES PER NO QUEDARME CURT NO PERQUE TINGUI 20
 	for (int i = 0; i < 20; ++i)
@@ -140,7 +141,7 @@ void ModulePlayer::Restart()
 
 void ModulePlayer::RestartLevel()
 {
-	
+	App->scene_intro->BoostActive = false;
 	
 	//RESETING PACKS POSITION ( NI IDEA DE COM ES FA PER POSAR LA SEVA SPEED A 0)
 	
@@ -188,7 +189,7 @@ void ModulePlayer::RestartLevel()
 	}
 	else {
 
-
+		App->scene_intro->BoostActive = false;
 		App->scene_intro->CubMtB1->SetPos(-50, 0, 50);
 		App->scene_intro->CubMtB2->SetPos(-53, 0, 50);
 		App->scene_intro->CubMtB3->SetPos(-56, 0, 50);
@@ -233,7 +234,7 @@ void ModulePlayer::RestartLevel()
 void ModulePlayer::RestartFromCheckpoint()
 {
 
-
+	App->scene_intro->BoostActive = false;
 
 	float RestartPos[20];
 	//LISTA D'OBJECTES DEL COTXE, NO SE CONTAR OSIGUI QUE EL 20 ES PER NO QUEDARME CURT NO PERQUE TINGUI 20
@@ -276,8 +277,13 @@ update_status ModulePlayer::Update(float dt)
 
 	if(App->input->GetKey(SDL_SCANCODE_W) == KEY_REPEAT)
 	{
-		//Mix_PlayChannel(-1, App->scene_intro->Sortida, 1);
-		acceleration = MAX_ACCELERATION;
+		if (App->scene_intro->BoostActive == true) {
+
+			acceleration = MAX_ACCELERATION * 3;
+		}
+		else {
+			acceleration = MAX_ACCELERATION;
+		}
 	}
 
 	if(App->input->GetKey(SDL_SCANCODE_A) == KEY_REPEAT)
@@ -307,10 +313,11 @@ update_status ModulePlayer::Update(float dt)
 
 	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN) {
 
-		CheckpointActive == false;
+		CheckpointActive = false;
 		App->scene_intro->CheckpointPack1 = false;
 		App->scene_intro->CheckpointPack2 = false;
 		App->scene_intro->CheckpointPack3 = false;
+		LOG("CHECKPOINT REMOVED");
 	}
 
 	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN) {

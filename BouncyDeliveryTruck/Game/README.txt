@@ -8,7 +8,7 @@ Made by:
 
 - Last Release
 
- 
+ https://github.com/MarcArizaAlborni/BouncyDeliveryTruck/releases
 
 - Github Repository:
 
@@ -34,11 +34,15 @@ There are 4 parts each with a different challenges Part1(Zig-Zag) Part2(Obstacle
 -Different types of obstacles each requiring something different to the player
 -Hinge Constraint Obstacles
 -Detects amount of packs when the player reaches the Finish Line and has different rewards depending on the amount
--Actually quite fun
+-Adaptable camera that will chase the vehicle, but will rotate around it when turning to make it easier for the player.
+-Boost area where the vehicle will accelerate at a much faster rate
 
-#TROUBLE
 
+##TROUBLE
+-Loading the level for the first time may lag a bit for( 1/2 seconds)
 -When restarting the packages don't reset speed so various restarts may be necessary until they stay still
+-If the car starts to shake hard, restart the game
+-It is perfectly possible to get all 3 packages to the finish line, you just have to practice abit.
 
 
 
@@ -51,7 +55,13 @@ There are 4 parts each with a different challenges Part1(Zig-Zag) Part2(Obstacle
 - Remove Checkpoint -> P
 - F2 -> FreeCamera / Focus Camera on Vehicle
 - F1 -> See colliders/Hide colliders
-
+- When free camera:
+   Forward->UP ARROW KEY
+   Backwards->DOWN ARROW KEY
+   Left->LEFT ARROW KEY
+   Right->Right ARROW KEY
+   UP->G
+   DOWN->F
 
 
 
